@@ -1,0 +1,2 @@
+class NoEnvironmentVariableError(ValueError):
+    pass
