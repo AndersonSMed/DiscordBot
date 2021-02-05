@@ -1,5 +1,5 @@
 # EducaBot
-A discord bot written in Python created to allow some useful commands to professors and students
+A discord bot created to allow some useful commands to both professors and students
 
 # Setting up Application
 First of all, make sure you have a valid Discord Bot Token, you can find it in the link [How to Get a Discord Bot Token](https://www.writebots.com/discord-bot-token/).
