@@ -12,7 +12,6 @@ if not DISCORD_BOT_TOKEN:
     raise exceptions.NoEnvironmentVariableError(
         "Please, set your DISCORD_BOT_TOKEN environment variable"
     )
-    exit()
 
 client = discord.Client()
 
