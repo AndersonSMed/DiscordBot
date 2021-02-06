@@ -10,4 +10,8 @@ class Base(abc.ABC):
         self.payload = payload
 
         if not self.command_name:
-            raise NotImplementedError('Should have a command name!')
+            raise ValueError('Should have a command name!')
+
+    @abc.abstractmethod
+    async def process(self):
+        raise NotImplementedError
