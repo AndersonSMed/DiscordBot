@@ -11,4 +11,4 @@ async def on_received_message(client, message):
     )
 
     if command:
-        await command.process()
+        await command.run()

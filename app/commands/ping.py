@@ -1,8 +1,8 @@
-from commands import base
+from app.commands import base
 
 
 class Ping(base.Base):
     command_name = 'ping'
 
-    async def process(self):
+    async def run(self):
         await self.message.channel.send('Pong!')

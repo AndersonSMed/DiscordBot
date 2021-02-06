@@ -1,7 +1,7 @@
-import constants
-from commands import ping
+from app import constants
+from app.commands import ping
 
-command_classes = [ping.Ping]
+COMMAND_CLASSES = [ping.Ping]
 
 
 def get_command_from_message(message):
@@ -31,7 +31,7 @@ def get_payload_from_message(message):
 
 
 def get_command_instance_from_message(client, message):
-    mapped_commands = {cmd.command_name: cmd for cmd in command_classes}
+    mapped_commands = {cmd.command_name: cmd for cmd in COMMAND_CLASSES}
 
     command_name = get_command_from_message(message=message)
 
