@@ -20,5 +20,10 @@ pip install -r requirements.txt
 
 # Running application
 ```bash
-python app
+python -m app
+```
+
+# Running tests
+```bash
+python -m pytest
 ```

@@ -1,4 +1,4 @@
-import commands
+from app import commands
 
 
 async def on_received_message(client, message):

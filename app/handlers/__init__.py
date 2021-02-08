@@ -1,4 +1,4 @@
-from handlers import messages
-from handlers import channels
+from app.handlers import messages
+from app.handlers import channels
 
 __all__ = ('messages', 'channels')

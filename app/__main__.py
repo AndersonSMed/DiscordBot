@@ -2,8 +2,8 @@ import os
 
 import discord
 
-import exceptions
-import handlers
+from app import exceptions
+from app import handlers
 
 
 DISCORD_BOT_TOKEN = os.getenv('DISCORD_BOT_TOKEN')
