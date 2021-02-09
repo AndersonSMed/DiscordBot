@@ -23,7 +23,16 @@ pip install -r requirements.txt
 python -m app
 ```
 
+# Setting up tests
+```bash
+pip install -r test_requirements.txt
+```
+
 # Running tests
 ```bash
 python -m pytest
 ```
+
+# Supported commands
+
+`$ping - Returns the phrase Pong! in the channel it was invoked`
