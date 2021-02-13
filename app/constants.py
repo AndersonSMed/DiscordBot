@@ -1,4 +1,4 @@
-"""Returns app constants"""
+"""Return application constants"""
 import os
 
 COMMAND_PREFIX = '$'
