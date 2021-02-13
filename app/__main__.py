@@ -1,14 +1,12 @@
-import os
-
+"""Setup discord client"""
 import discord
 
+from app import constants
 from app import exceptions
 from app import handlers
 
 
-DISCORD_BOT_TOKEN = os.getenv('DISCORD_BOT_TOKEN')
-
-if not DISCORD_BOT_TOKEN:
+if not constants.DISCORD_BOT_TOKEN:
     raise exceptions.NoEnvironmentVariableError(
         "Please, set your DISCORD_BOT_TOKEN environment variable"
     )
@@ -26,4 +24,5 @@ async def on_guild_channel_create(channel):
     await handlers.channels.on_guild_channel_created(client, channel)
 
 
-client.run(DISCORD_BOT_TOKEN)
+if __name__ == "__main__":
+    client.run(constants.DISCORD_BOT_TOKEN)
