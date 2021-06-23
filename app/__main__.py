@@ -21,9 +21,4 @@ async def on_message(message):
     await handlers.messages.on_received_message(client, message)
 
 
-@client.event
-async def on_guild_channel_create(channel):
-    await handlers.channels.on_guild_channel_created(client, channel)
-
-
 client.run(DISCORD_BOT_TOKEN)

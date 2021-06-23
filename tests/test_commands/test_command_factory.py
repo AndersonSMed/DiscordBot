@@ -68,4 +68,3 @@ def test_get_command_instance_with_payload(
 
     assert type(instance) == type_of_object
     assert instance.payload == "lorem ipsum"
-

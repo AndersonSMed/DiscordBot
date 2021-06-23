@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 # Running application
 ```bash
-python -m app
+make run
 ```
 
 # Setting up tests
@@ -30,7 +30,7 @@ pip install -r test_requirements.txt
 
 # Running tests
 ```bash
-python -m pytest
+make test
 ```
 
 # Supported commands
