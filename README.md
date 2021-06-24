@@ -33,6 +33,8 @@ pip install -r test_requirements.txt
 make test
 ```
 
-# Supported commands
+# List of Supported commands
 
-`$ping - Returns the phrase Pong! in the channel it was invoked`
+| Command Name | Action |
+| ------------ | ------ |
+| $ping | Prints the phrase "Pong!" on the channel |
